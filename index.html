@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins _aycelia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>_aycelia</h1>
+    <div class="skin">
+        <img src="pictures/1.png" alt="Скин 1">
+        <p>-         not drain but emo</p>
+        <a href="https://drive.google.com/file/d/1muhieiczHUfh0AnhP9PyEsgkrd9dfpWU/view?usp=sharing" class="download-btn">Download</a>
+    </div>
+    <div class="skin">
+        <img src="pictures/2.png" alt="Скин 2">
+        <p>bubbleskin + argon pro hs</p>
+        <a href="https://drive.google.com/file/d/1oVFhFRCkY_aeRuqHb0BGALYYTD2laQ21/view?usp=sharing" class="download-btn">Download</a>
+    </div>
+    <div class="skin">
+        <img src="pictures/3.png" alt="Скин 2">
+        <p>Rafis 2018-03-26 HDDT (akolibed edit) blue cursor</p>
+        <a href="https://drive.google.com/file/d/1OMHzKf8sLwecNk1bc47KLXsJrvsC0dIZ/view?usp=sharing" class="download-btn">Download</a>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const body = document.querySelector('body');
+        const gradient = `linear-gradient(to right, #fff, #87ceeb, #fff)`;
+        const percentage = `${scrollPosition / (document.body.scrollHeight - window.innerHeight) * 100}%`;
+
+        body.style.background = `${gradient}, ${gradient}`;
+        body.style.backgroundSize = `400% 400%, 400% 400%`;
+        body.style.backgroundPosition = `-${percentage} 50%, ${percentage} 50%`;
+    });
+</script>
+
+</body>
+</html>
